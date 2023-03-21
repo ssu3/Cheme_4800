@@ -1,5 +1,5 @@
 ## Objective: 
-In Problem Set 2, we will utilize the chemical reaction database [KEGG database](https://www.kegg.jp) and design a program that takes the molecular formulas listed in the database and for each molecular formula, generates the element of the molecule as a dictionary key and its respective subscript as a dictionary value. 
+In Problem Set 2, we will utilize the chemical reaction database [KEGG database](https://www.kegg.jp). We will design a program that takes the molecular formulas listed in the database and generates the elements of each molecule as a dictionary key and its respective subscript as a dictionary value.
 
 Chemical reaction databases, e.g., [The KEGG: Kyoto Encyclopedia of Genes and Genomes](https://www.kegg.jp), are ubiquitous on the web.  In Problem Set 2, we will develop a program to compute the molecular composition of chemical compound strings such as `C6H12O6`, which are stored in the [KEGG database](https://www.kegg.jp).
 
