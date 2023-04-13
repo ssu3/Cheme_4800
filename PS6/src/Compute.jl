@@ -1,5 +1,5 @@
 """
-Fill me in
+    compute_maximum_growth_rate(problem::MyStoichiometricNetworkModel) -> Dict{String,Float64}
 """
 function compute_maximum_growth_rate(problem::MyStoichiometricNetworkModel)::Dict{String,Float64}
 
