@@ -1,6 +1,6 @@
 
 """
-Fill me in.
+    _build_stoichiometric_matrix(data::Dict{String,Any}) -> Array{Float64,2}
 """
 function _build_stoichiometric_matrix(data::Dict{String,Any})::Array{Float64,2}
     
@@ -11,6 +11,26 @@ function _build_stoichiometric_matrix(data::Dict{String,Any})::Array{Float64,2}
     number_of_metabolites = length(list_of_metabolites);
     S = Array{Float64,2}(undef, number_of_metabolites, number_of_reactions);
     
+    for i in 1:number_of_metabolites
+
+        metabolite_dict = list_of_metabolites[i];
+        key_id=metabolite_dict["id"];
+
+
+        for j in 1:number_of_reactions 
+            reaction_dict=list_of_reactions[j];
+            reaction_metabolites_dict=reaction_dict["metabolites"];
+            if (haskey(reaction_metabolites_dict,key_id)==true)
+                st_value=reaction_metabolites_dict[key_id];
+                S[i,j]=st_value
+            else
+                S[i,j]=0
+            end
+        end 
+    end
+         
+            
+
     # TODO: fill in the entries of the stochiometric matrix 
     # ...
 
@@ -19,7 +39,7 @@ function _build_stoichiometric_matrix(data::Dict{String,Any})::Array{Float64,2}
 end
 
 """
-Fill me in.
+    _build_metabolite_id_array(data::Dict{String,Any}) -> Array{String,1}
 """
 function _build_metabolite_id_array(data::Dict{String,Any})::Array{String,1}
 
@@ -38,7 +58,7 @@ function _build_metabolite_id_array(data::Dict{String,Any})::Array{String,1}
 end
 
 """
-Fill me in.
+    _build_reaction_id_array(data::Dict{String,Any} -> Array{String,1}
 """
 function _build_reaction_id_array(data::Dict{String,Any})::Array{String,1}
     
@@ -57,7 +77,7 @@ function _build_reaction_id_array(data::Dict{String,Any})::Array{String,1}
 end
 
 """
-Fill me in.
+    _build_bounds_array(data::Dict{String,Any}) -> Array{Float64,2}
 """
 function _build_bounds_array(data::Dict{String,Any})::Array{Float64,2}
 
@@ -80,7 +100,7 @@ function _build_bounds_array(data::Dict{String,Any})::Array{Float64,2}
 end
 
 """
-Fill me in
+    build(type::Type{MyStoichiometricNetworkModel}, data::Dict{String,Any}) -> MyStoichiometricNetworkModel
 """
 function build(type::Type{MyStoichiometricNetworkModel}, data::Dict{String,Any})::MyStoichiometricNetworkModel
 
