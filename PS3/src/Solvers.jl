@@ -73,6 +73,8 @@ function solve(type::T, A::Array{Float64,2}, b::Array{Float64,1}, xₒ::Array{Fl
         return _jacobi_iteration_solver(A, b, xₒ, tolerance, maxiter);
     elseif (isa(type, GaussSeidelIterationSolver) == true)
         return _gauss_seidel_iteration_solver(A, b, xₒ, tolerance, maxiter);
+    elseif (isa(type, MyChemicalDecayModel) == true)
+        return MyChemicalDecayModel()
     else
         throw("Incorrect solver type has been requested!")
     end
