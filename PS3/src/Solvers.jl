@@ -2,7 +2,6 @@
 """
 _jacobi_iteration_solver(A::Array{Float64,2}, b::Array{Float64,1}, xₒ::Array{Float64,1},
     tolerance::Float64, maxiter::Int64) -> Array{Float64,1}
-
 Internal method that performs Jacobi iteration on the system Ax = b starting from the initial guess xₒ.
 The solver runs until maxiter (maximum number of iterations), or the error tolerance is met. 
 """
@@ -49,7 +48,6 @@ end
 """
 _gauss_seidel_iteration_solver(A::Array{Float64,2}, b::Array{Float64,1}, xₒ::Array{Float64,1},
     tolerance::Float64, maxiter::Int64) -> Array{Float64,1}
-
 Internal method that performs Gauss Seidel iteration on the system Ax = b.
 The solver runs until maxiter (maximum number of iterations). This function wraps a call to the 
 `gauss_seidel(A,b; maxiter = maxiter)` function in IterativeSolvers.jl
@@ -66,15 +64,19 @@ end
 solve(type::T, A::Array{Float64,2}, b::Array{Float64,1}, xₒ::Array{Float64,1};
     tolerance::Float64 = 0.001, maxiter::Int64 = 10000) -> Array{Float64,1} where T <: AbstractIterativeSolver
 """
-function solve(type::T, A::Array{Float64,2}, b::Array{Float64,1}, xₒ::Array{Float64,1};
+
+
+function solve(type::T, type2::MyChemicalDecayModel, xₒ::Array{Float64,1};
     tolerance::Float64 = 0.001, maxiter::Int64 = 10000)::Array{Float64,1} where T <: AbstractIterativeSolver
+   
+
+    A = type2.A
+    b = type2.b
     
     if (isa(type, JacobiIterationSolver) == true)
         return _jacobi_iteration_solver(A, b, xₒ, tolerance, maxiter);
     elseif (isa(type, GaussSeidelIterationSolver) == true)
         return _gauss_seidel_iteration_solver(A, b, xₒ, tolerance, maxiter);
-    elseif (isa(type, MyChemicalDecayModel) == true)
-        return MyChemicalDecayModel()
     else
         throw("Incorrect solver type has been requested!")
     end
