@@ -1,4 +1,5 @@
-
+## Objective: 
+In Problem Set 3, we implemented two functions to build a system matrix and used two iterative methods, Jacobi and Gaus-Siedel, to solve for the decay of compound A over time at various rate constant values. 
 
 
 |Row|  Case 1 | Case 2 | Case 3|
