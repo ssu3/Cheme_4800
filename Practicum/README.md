@@ -1,7 +1,6 @@
 
 
-|Row|  Case 1 | 
-|---- | ----- | Sum(\mathbf{\Delta}) by row| ----|
+|Row| -- | Case 1 | 
 | Reaction 25 | -175 |
 | Reaction 44 | -7 | 
 | Reaction 45 | -7 | 
