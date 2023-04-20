@@ -1,6 +1,15 @@
 
+|Row|  Case 1 | 
+|---- | ----- | 
+| $det(A) \ne 0$ | Yes | Yes | Yes |
+| Diagonally Dominant | Yes | Yes | No |
+| Jacobi Solver | Yes | Yes | No |
+| Gauss Seidel Solver | Yes | Yes | No |
+| Error Jacobi| 0.0019 | 0.0 | 1.586e175 |
+| Error Gauss Seidel| 4.41e-15 | 0.0 |1.585e175 |
 
-|Row| -- | Case 1 | 
+|Row|  Case 1 | 
+|---- | ----- | 
 | Reaction 25 | -175 |
 | Reaction 44 | -7 | 
 | Reaction 45 | -7 | 
