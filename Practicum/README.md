@@ -8,7 +8,7 @@
 | Error Jacobi| 0.0019 | 0.0 | 1.586e175 |
 | Error Gauss Seidel| 4.41e-15 | 0.0 |1.585e175 |
 
-|Reaction #|  Sum of Delta by Column | 
+|Reaction #|  $$ \mathbf{\Delta} $$ by column | 
 |---- | ----- | 
 | Reaction 25 | -175 |
 | Reaction 44 | -7 | 
