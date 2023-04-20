@@ -1,27 +1,28 @@
 
 
-|Row|  Case 1 | Case 2 | Case 3|
-|---- | ----- | -----| ----|
-| Reaction 44 | Yes | Yes | Yes |
-| Reaction 45 | Yes | Yes | No |
-| Reaction 46 | Yes | Yes | No |
-| Reaction 47 | Yes | Yes | No |
-| Reaction 48 | 0.0019 | 0.0 | 1.586e175 |
-| Reaction 49 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 50 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 51 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 52 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 53 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 54 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 55 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 56 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 57 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 58 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 59 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 60 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 61 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 62 | 4.41e-15 | 0.0 |1.585e175 |
-| Reaction 63 | 4.41e-15 | 0.0 |1.585e175 |
+|Row|  Case 1 | 
+|---- | ----- | Sum(\mathbf{\Delta}) by row| ----|
+| Reaction 25 | -175 |
+| Reaction 44 | -7 | 
+| Reaction 45 | -7 | 
+| Reaction 46 | -14 | 
+| Reaction 47 | -3 |
+| Reaction 48 | -9 |
+| Reaction 49 | -4 |
+| Reaction 50 | -24 |
+| Reaction 51 | -10 | 
+| Reaction 52 | -24 | 
+| Reaction 53 | -20 | 
+| Reaction 54 | -18 | 
+| Reaction 55 | -1 | 
+| Reaction 56 | -3 | 
+| Reaction 57 | -11 |
+| Reaction 58 | -13 | 
+| Reaction 59 | -5 | 
+| Reaction 60 | -2 | 
+| Reaction 61 | -6 | 
+| Reaction 62 | -9 | 
+| Reaction 63 | -12 | 
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/kVgVqUvf)
 # CHEME 1800/4800: Midterm Practicum
