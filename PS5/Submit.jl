@@ -38,3 +38,4 @@ table[1,4] = σ_beta_1
 table[2,3] = μ_beta_2
 table[2,4] = σ_beta_2
 pretty_table(table; header)
+#print(error)
