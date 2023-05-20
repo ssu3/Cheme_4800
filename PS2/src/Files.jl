@@ -1,4 +1,3 @@
-
 """
     read_compounds_file(path::String) -> Dict{String, MyChemicalCompoundModel}
 
@@ -35,7 +34,7 @@ function read_compounds_file(path::String)::Dict{String, MyChemicalCompoundModel
             # d) from the data in each reacord, we need to build a MyChemicalCompoundModel object. Each compound object should be stored in the compound dict with the name as the key
             
             if (contains(line,"#") == false)
-                fields = split(line, ':'); # splits around the ':'
+                fields = split(line, ','); # splits around the ','
 
                 name = string(fields[1])
                 formula = string(fields[2])
