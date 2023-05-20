@@ -1,11 +1,14 @@
-# This file holds test data for Problem Set 2 CHEME 1800/4800
+# This file holds test data for Problem Set 2 CHEME 1800/4800 as well as additional data from 
+#https://byjus.com/chemical-compound-formulas/ which depicts compound name, molecular weight, 
+#and the chemical formula of various compounds 
+
 # Each record has two fields: name,formula
 # 
 # Fields:
 # name: holds the name of the chemical compound
 # formula: holds the molecular formula for the compound
-#name,formula
-beta-D-Glucose,:C6H12O6
+#name:formula
+beta-D-Glucose:C6H12O6
 alpha-D-Glucose-6-phosphate:C6H13O9P1
 beta-D-Fructofuranose-6-phosphate:C6H13O9P1
 beta-D-Fructose-1-6-bisphosphate:C6H14O12P2
@@ -29,6 +32,50 @@ Ammonia:N1H3
 Nitric Acid:H1N1O3 
 Phosphoric Acid:H3P1O4
 Sodium Phosphate:Na3P1O4
+Calcium Carbonate:Ca1C1O3
+Carbonic Acid:H2C1O3
+Sodium Bicarbonate:NaH1C1O3
+Sodium Hydroxide:Na1O1H1
+Hydrobromic Acid:H1Br1
+Potassium Hydroxide:K1O1H1
+Silver Nitrate:Ag1N1O3
+Sodium Chloride: Na1Cl1
+Methane:C1H4 
+Sodium Nitrate:Na1N1O3
+Aluminum Oxide:Al2O3
+Carbon Tetrachloroide:C1Cl4 
+Citric Acid:C6H8O7
+Salicylic Acid:C7H6O3
+Sodium Acetate:C2H3NaO2
+Sodium Sulfate:Na2S1O4
+Potassium Nitrate:KNO3
+Ammonium Chloride:NH4Cl
+Calcium Oxide:Ca1O1
+Carbon Monoxide:C1O1
+Chlorine gas:Cl2
+Hydrogen Peroxide:H2O2 
+Potassium Chloride:K1Cl1 
+Sulfur Dioxide:S1O2 
+Iron Oxide:Fe2O3 
+Silver Chloride:Ag1Cl1 
+Sodium Iodide:Na1I1
+Acetone:C3H6O1 
+Benzene:C6H6 
+Methanol:C1H4O1 
+Sodium Sulfite:Na2S1O3 
+Zinc Chloride:Zn1Cl2 
+Magnesium Carbonate:Mg1C1O3 
+Benzoic Acid:C7H602 
+Acetamide:C2H5NO 
+Carbon Disulfide:C1S2 
+Potassium Chromate:Cr1K2O4 
+Zinc Sulfate:Zn1S1O4 
+Perchloric Acid:H1Cl1O4 
+Potassium Bromide:K1Br1
+Chromic Acid:H2Cr1O4 
+Lactic Acid:C3H6O3 
+
+
 
 
 
